@@ -1,0 +1,46 @@
+
+.section__wrapper {
+    width: 25%;
+    @include flex (column, stretch, center);
+    margin: 2% auto;
+
+
+        .section__item,
+        .section__item--primary,
+        .section__item--secondary {
+            @include flex (row, center, center);
+            width: 186px;
+            height: 186px;
+            border-radius: 100%;
+            padding: 5%;
+                //         .section__title {
+                //             @include formatText (20px, 400, 44px); ПОЧЕМУ ТУТ НЕ РАБОТАЕТ?
+                //             color: $backColor;
+                //         }
+                // }
+        }
+}
+
+
+.section__item {
+    background-color: $backColor;
+}
+
+.section__item--primary {
+    background-color: #d94748;
+}
+
+.section__item--secondary {
+    background-color: #ebbb11;
+}
+
+.section__title {
+    @include formatText (20px, 400, 44px);
+    color: $backColor;
+}
+
+.section__text {
+    @include formatText (14px, 400, 1.2);
+    color: $secondaryColor;
+    text-align: center;
+}

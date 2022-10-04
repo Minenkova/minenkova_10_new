@@ -1,0 +1,29 @@
+.block {
+    background: url(../images/background_banner.png);
+    background-size: cover;
+
+            .block__item {
+                .block__title,
+                .block__text,
+                .block__link {
+                    color: $primaryColor;
+                    @include formatText (42px, 400, 44px);
+                }
+
+                .block__text {
+                @include formatText (26px, 400, 44px);
+                width: 58%;
+                }
+
+                .wrapper--primary {
+                    @include flex (row, space-around, center);
+                    background-color: $backColor;
+                    width: 41%;
+                    text-align: center;
+
+                        .block__link {
+                            @include formatText (22px, 400, 44px);                           
+                        }
+                }      
+            }
+}

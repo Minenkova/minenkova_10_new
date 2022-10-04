@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'MyriadPro';
+    src: url(/fonts/MyriadPro-Regular.woff);
+}
+
+$backColor: #5094f2;
+$primaryColor: #fff;
+$secondaryColor: #909090;
+$widthSize: 1022px;
+
+@mixin formatText ($size, $fw, $lh) {
+    font-size: $size;
+    font-weight: $fw;
+    line-height: $lh;
+    font-family: 'MyriadPro';    
+}
+
+@mixin flex ($dir, $jc, $ai,) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.wrapper {
+    @include flex (row, space-around, center);
+    width: $widthSize;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+@import '_header';
+
+@import '_block';
+
+@import '_section';
+
+@import '_article';
+
+@import '_footer';
+
+

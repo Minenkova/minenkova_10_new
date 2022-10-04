@@ -1,0 +1,9 @@
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 1%;
+
+        .footer__text {
+            @include formatText (15px, 400, 36px);
+            color: $secondaryColor;
+        }
+}

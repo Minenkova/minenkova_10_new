@@ -1,0 +1,37 @@
+
+.article__item--primary {
+    @include flex (column, space-around, center);
+    width: 380px/$widthSize*100%;
+    padding: 3%;
+
+        .article__heading {
+            display: block;
+            width: 100%;
+            @include formatText (42px, 400, 44px);
+            color: #6f7173;
+            padding-bottom: 5%;
+        }
+
+        .article__img {
+            width: 100%;
+        }
+}
+
+.article__item--secondary {
+    @include flex (column, flex-start, center);
+    width: 463px/$widthSize*100%;
+
+
+        .article__headline {
+            @include formatText (26px, 400, 44px);
+            color: #6f7173;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .article__text {
+            @include formatText (15px, 400, 36px);
+            color: $secondaryColor;
+        }
+}
+

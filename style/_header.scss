@@ -1,0 +1,43 @@
+.logo {
+    @include flex(row, flex-start, center);
+    width:180px/$widthSize*100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+    .logo__item--primary {
+        width: 44px;
+        height: 44px;
+        background-color: $backColor;
+        border-radius: 100%;
+
+        .logo__text {
+            color: $primaryColor;
+            @include formatText(64px, 400, 1);
+            text-align: center;
+        }
+    }
+
+    .logo__item {
+            @include formatText(42px, 400, 1.2);
+    }
+}
+
+.menu {
+    width:480px/$widthSize*100%;
+
+        .menu__item {
+            @include flex(row, space-between, center);
+            margin-left: 30%;
+    }
+
+    .menu__link {
+        text-decoration: none;
+        color: #6c6c6c;
+
+        &:hover {
+            padding-bottom: 45%;
+            border-bottom: 3px solid$backColor;
+            transition: all .3s;
+        }
+    }
+}
